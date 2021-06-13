@@ -1,0 +1,46 @@
+body {
+    background-color: cadetblue;
+}
+form {
+    display: inline-block;
+    width: 500;
+}
+h1 {
+    font-size: 50px;
+}
+.inline {
+    display: inline;
+}
+.textlabel {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+
+    font-size: 30px;
+    font-weight: bolder;    
+}
+.textinput{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+.justifycontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.submit {
+    float: right;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 10px;
+}
+.sideborder {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    margin: 20px 0px
+}
