@@ -1,15 +1,27 @@
 body {
-    background-color: cadetblue;
+    background-color: #111111;
 }
 form {
     display: inline-block;
-    width: 500;
+    width: 500px;
 }
 h1 {
     font-size: 50px;
+    color: white;
+}
+h3 {
+    color: white;
 }
 .inline {
     display: inline;
+}
+a {
+    text-decoration: dashed;
+    color: black;
+}
+hr {
+    margin-right: 80vw;
+    min-width: 500px;
 }
 .textlabel {
     display: inline-block;
@@ -17,7 +29,9 @@ h1 {
     height: 30px;
 
     font-size: 30px;
-    font-weight: bolder;    
+    font-weight: bolder; 
+    
+    color: white;
 }
 .textinput{
     display: inline-block;
@@ -40,7 +54,27 @@ h1 {
     padding: 10px;
 }
 .sideborder {
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
     margin: 20px 0px
+}
+.back {
+    color: white
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+tr {
+    border: 2px solid black;
+}
+td {
+    border: 2px solid black;
+    width: 80px;
+    height: 40px;
+
+    text-align: center;
+    background-color: white;
 }

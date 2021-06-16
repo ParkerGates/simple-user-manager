@@ -1,4 +1,23 @@
 html
     include ./included/head
     body
-        h3 Edit View
+        h1 Edit View
+        hr
+        form(action="/edit", method="POST")
+            div.justifycontent.sideborder
+                label.textlabel(for="username") Username:
+                input.textinput(type="text", name="username", value=user.username, required)
+
+            div.justifycontent.sideborder
+                label.textlabel(for="name") Name:
+                input.textinput(type="text", name="name", value=user.name, required)
+
+            div.justifycontent.sideborder
+                label.textlabel(for="email") Email:
+                input.textinput(type="text", name="email", value=user.email, required)
+
+            div.justifycontent.sideborder
+                label.textlabel(for="age") Age:
+                input.textinput(type="text", name="age", value=user.age, required)
+
+            input(type="submit", onclick="this.form.submit();this.disabled = true;").submit

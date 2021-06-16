@@ -1,4 +1,26 @@
 html
     include ./included/head
     body
-        h3 Listing View
+        h1 Listing View
+        hr
+        table
+            tr 
+                td Username: 
+                td Name:
+                td Email:
+                td Age:
+                td &nbsp;
+                td &nbsp;
+            each val in userListLength
+                tr            
+                    td= userList[val].username
+                    td= userList[val].name
+                    td= userList[val].email
+                    td= userList[val].age
+                    td 
+                        a(href=`./edit/${userList[val].id}`) edit
+                    td
+                        a(href=`./delete/${userList[val].id}`) delete
+
+        br
+        a(href="./").back &#8592; Add New User
